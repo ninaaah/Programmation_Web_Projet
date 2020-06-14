@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head id="header" role="banner" class="main_header">
+        <meta charset="utf-8" />
+
+        <header>
+        <title>Découvrir Paris</title>
+
+        
+
+        <a href="Paris_Projet.html"><img src="file:///Users/nina/Documents/CSS%20et%20HTML/Tour-effeil.png"  alt=""></a><br>
+        <h1 class="Premier">À La découverte de Paris</h1>
+        <div class="header-inner">
+        <nav class="header-nav">
+
+              
+          <ul class="menu">
+
+            <li><a href="Presentation.html">Accueil</a>
+
+
+            <li><a href="Gastronomie.html">Restaurant</a>
+              <ul class="sous">
+                <li><a href="#"> Italien</a></li>
+                <li><a href="#"> Asiatique</a></li>
+                <li><a href="#"> Gastronomique</a></li>
+              </ul>
+            </li>
+
+            <li><a href="Culturel.html">Culturel</a>
+                <ul class="sous">
+                  <li><a href="Musée.html">Musées</a></li>
+                  <li><a href="Originals.html">Originals</a></li>
+                </ul>
+             </li>
+
+              <li><a href="Atypique.html">Atypique</a>
+                <ul class="sous">
+                  <li><a href="Extrême.html">Extrême</a></li>
+                  <li><a href="Paisible.html">Paisible</a></li>
+                </ul>
+              </li>
+
+              <li><a href="Bar.html">Bar</a>
+                <ul>
+                    <li><a href="Branché.html">Branché</a></li>
+                  <li><a href="Hors_Commun.html">Hors du Commun</a></li>
+                  <li><a href="Incontournables.html">Incontournable</a></li>
+                </ul>
+              </li>
+
+              <li><a href="Jouer.html">À vous de jouer</a></li>
+              <li><a href="Nous.html">Qui sommes-nous ?</a></li>
+
+          </ul>
+
+        </nav>
+        </div>
+        <hr>
+      </header>
+
+
+        <style>
+
+          *{
+            box-sizing : border-box;
+          }
+
+          html, body, ul{
+            padding:0;
+            margin:0;
+          }
+
+          .premier
+          {
+            text-decoration: none;
+         }
+
+          body
+          {  
+            font-family : Helvetica Neue, Helvetica, Arial, sans-serif; 
+            line-height : 1.50;
+            color: black;
+            background: linear-gradient(to right, #DCD4F9, #D2A4F9);
+
+          }
+
+          h1
+          {
+            font-family : URW Chancery L,cursive;
+          }
+
+        img{
+            height: 100px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 4px 4px 6px #888;
+          }
+
+
+
+/* Animation pour le menu */
+
+/* Menu Parents*/
+.menu
+{
+ padding: 10px 0 0 0;
+ list-style: none; /* retire les points*/
+}
+
+.menu li
+{
+  float: left;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.menu a
+{
+  height: 25px;
+  padding: 0 25px;
+  color: black;
+  text-transform: uppercase;
+  font:  13px Arial, Helvetica;
+  text-decoration: none;
+}
+
+.menu li:hover > a{
+        color: #320267;
+}
+
+.menu li:hover > ul{
+        display: block;
+}
+
+/* Menu Enfants */
+
+.menu ul
+{
+ display: none;
+ position: absolute; /* permet de fixer */
+ top: 35px; /* espace entre le parent et le sous menus */
+ background: linear-gradient(#AD8BD2, #B5A5C7);
+ border-radius: 5px;
+}
+
+.menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-shadow: 0 1px 0 black, 0 1px 0 black;
+}
+
+.menu ul li:last-child
+{
+    box-shadow: none; /* Enlève le tiret du dernier enfants */
+}
+
+.menu ul a{
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap; /*permet d'adapter*/
+    text-transform: none;
+}
+
+.menu ul a:hover
+{
+  background: linear-gradient(#F4AAE2, #F9C4EC);
+}
+
+.menu ul li:first-child a:after{  /*Fonction qui s'occupe du triangles*/
+    content: '';
+    position: absolute;
+    left: 30px; 
+    top: -8px; 
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-bottom: 8px solid #B38BEF;
+}
+
+.menu ul li:first-child a:hover:after{
+    border-bottom-color: #ECA6E7;
+}
+
+.menu ul li:last-child a
+{
+  border-radius: 0 0 5px 5px;
+}
+
+.menu:after{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+
+
+
+
+
+
+
+/* Fin de l'annimation du menu */
+
+
+          h1
+          {
+            text-align: center;
+          }
+
+
+/* Début annimation pour le bouton Lieu du Mois */
+
+.Boite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px
+}
+
+
+/* Fin animmation pour le bouton Lieux du mois */
+
+/* Début animation pour les différent paragraphes */
+
+
+
+
+/* Fin animation des paragraphes */
+.flex 
+{
+  display
+}
+.titre1
+{
+  font-family : Noto Sans, sans-serif;
+}
+
+.resto1, .resto2, .resto3, .resto4
+{
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px
+  padding: 5px;
+  background-color: #E8CFF8;
+  border-radius: 10px;
+  border-left: 0 solid #0821F2;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+  font-family: Optima, sans-serif;
+}
+
+.imgbeef, .italien, .coreen, .americain
+{
+  height: 200px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  box-shadow: 4px 4px 6px #888;
+}
+
+
+
+.unique
+{
+  text-decoration:none;
+}
+
+.footer
+{
+  background: linear-gradient(to right, #DCD4F9, #D2A4F9);
+}
+
+.menubas ul
+{
+  text-align : center;
+  list-style-type: none;
+}
+
+.menubas li
+{
+    margin: auto;
+    display:vertical-block;
+    height : 20px;
+    width : 150px;
+}
+
+.menubas li a 
+{
+  display: block;
+  text-decoration: none;
+  color:black;
+}
+
+.photoF
+{
+  display: inline;
+  margin: 0 auto;
+}
+
+.imageF
+{
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 6px #888;
+  text-align: center;
+}
+
+.encadrer 
+{
+
+  border: 2px solid;
+  padding: 10px;
+  height: 240px;
+  width: 600px;
+
+
+}
+
+
+
+
+    </style>
+        
+    </head>
+
+    <body>
+      <div class="flex">
+      <div class="resto1">
+        <h2 class= "titre1"> BeefCut</h2>
+        <p class="beefcut"> 
+          Vous aimez la viande ? Une nourriture de provenance unique ? Alors nous vous avons dégoté le lieu idéal. Le Beef Cut, un restaurant steakhouse plutôt branché, propose à sa clientèle les meilleures viandes du marché dans un cadre chic et moderne. Bœuf de Kobe, ou encore Black Angus, le restaurant Beef Cut animera votre soirée avec des ambiances à la « salt bae ». Les prix seront cependant plus élevés qu’ailleurs.
+        </p>
+        <img class="imgbeef" src="file:///Users/nina/Documents/CSS%20et%20HTML/beefcut.jpg" alt=""><br>
+
+       <p>
+        Pour en savoir plus : <a href="https://paris.beefbar.com" title="Cliquez">Cliquez</a> !</p>
+      </p>
+      </div>
+
+      <div class="resto2">
+        <h2 class="titre1"> La Félicita</h2>
+        <p class="felicita">
+          La Felicità, c’est un immense food-market en direct producteurs où tout est 100% fait maison. 4.500 m2, 8 cuisines, 9 chefs, 3 bars et une grosse dose d’Itaie. Venez vous balader dans les allées, profitez de toutes les spécialités culinaires proposées par l’enseigne, ici, tout est artisanal ! La Felicità, c’est aussi un lieu de fête tous les vendredi et samedi soirs. En bref, il s’agit du spot parfait pour venir chiller entre potes ou avec votre dernier date. Ou tout simplement en famille avec ateliers kids friendly et cool garderie tous les deuxièmes dimanche de chaque mois. </p>
+        <img class="italien" src="file:///Users/nina/Documents/CSS%20et%20HTML/fe%CC%81licita.jpg" alt=""><br>
+        <p> Pour en savoir plus : <a href="https://www.lafelicita.fr" title="Cliquez">Cliquez</a> ! </p>
+      </div>
+
+      <div class="resto3">
+        <h2 class="titre1"> Gangnam</h2>
+        <p class="gangnam">
+          Les restaurants asiatiques à Paris, ce n’est certainement pas ce qu’il manque. Mais qu’en est-il des bons restaurants asiatiques ? Le Gangnam à Belleville pourra vous en donner une très bonne idée. Ici, vous êtes assis autour d’un grill avec un véritable feu, et on vous apporte vos viandes crues, marinées ou non, avec les accompagnements de votre choix. Il ne vous reste plus qu’à cuir et déguster vos plats selon vos envies, le tout dans un cadre très végétal et original. </p>
+        <img class="coreen" src="file:///Users/nina/Documents/CSS%20et%20HTML/gangnam.jpg" alt=""><br>
+        <p> Pour en savoir plus : <a href="http://gangnam.fr" title="Cliquez">Cliquez</a> ! </p>
+      </div>
+
+      <div class="resto4">
+        <h2 class="titre4"> HD Diner </h2>
+        <p class="diner">
+        Déjà plutôt célèbre à Paris, HD Diner est un restaurant fast-food à thème proposant des plats typiquement américains. Le concept du restaurant est basé sur les années 50 aux États-Unis, le décor et les couleurs y sont : rien n’est laissé au hasard. Fort de ses produits frais livrés 7 jours sur 7, vous pourrez aller faire un tour chez eux du côté de Châtelet, ou encore St Michel, pour goûter leurs hamburgers et milkshakes et faire un saut temporel dans la côte ouest des années 50 et 60 pour un petit prix. </p>
+        <img class="americain" src="file:///Users/nina/Documents/CSS%20et%20HTML/americain.jpg" alt=""><br>
+        <p> Pour en savoir plus : <a href="https://www.happydaysdiner.com" title="Cliquez">Cliquez</a> ! </p>
+      </div>
+      </div>
+
+
+
+
+
+      <footer class="footer">
+        <hr>
+        <div class="encadrer">
+        <nav class="menubas">
+        <ul>
+          <li><a href="Paris_Projet.html">Accueil</a></li>
+          <li><a href="Gastronomie.html">Gastronomie</a></li>
+          <li><a href="Culturel.html">Culturel</a></li>
+          <li><a href="Atypique.html">Atypique</a></li>
+          <li><a href="Bar.html">Bar</a></li>
+          <li><a href="Jouer.html">À vous de jouer</a></li>
+          <li><a href="Nous.html">Qui sommes-nous ?</a></li>
+        </ul>
+        </nav>
+
+        <div align=center>
+        <table class="photoF">
+          <tr>
+            <td><img class=" imageF" src="file:///Users/nina/Desktop/facebook.jpg"  alt=""><br></td>
+            <td><img class=" imageF"src="file:///Users/nina/Desktop/twitter.png"  alt=""><br></td>
+            <td><img class=" imageF"src="file:///Users/nina/Desktop/instagram2.jpg"  alt=""><br></td>
+          </tr>
+        </table>
+      </div>
+  </div>
+        
+
+
+      </footer>
+
+
+      <script>
+
+
+
+
+
+      </script>
+    
+    </body>
+
+</html>

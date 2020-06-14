@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head id="header" role="banner" class="main_header">
+        <meta charset="utf-8" />    
+          
+ <style>
+/* C'EST LA PAGE D'ACCUEIL */
+
+        img{
+            height: 100px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            display: block;
+            border-radius: 50%; 
+            box-shadow: 4px 4px 6px #888;
+          }
+
+
+/* Début de l'animation À la découverte de paris */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #D3AFFD;
+  background-image: url("file:///Users/nina/Documents/CSS%20et%20HTML/paris.jpeg");
+  background-size: cover; /* Pour l'image de fond*/
+ }
+
+.centre 
+{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.figure 
+{
+  background: rgba(0, 255, 255, 0.12); /* Touche à la figure*/
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); 
+  padding: 160px 120px;
+}
+
+.figure:hover 
+{
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%); /* On traitre le polygone */
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8), 2px 2px 1px rgba(0, 0, 0, 0.2);   /* On fait la transition texte   */   
+  transition: all 0.2s linear;
+}
+
+.figure, .figure a 
+{
+  color: rgba(255, 255, 255, 0.05);   
+}
+
+.title 
+{
+  margin-bottom: 20px;
+  pointer-events: none;
+  font-size: 240%;
+}
+
+.centre 
+  {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+ /* Fin animation à la découverte de Paris */
+
+
+
+
+        </style>
+        
+    </head>
+
+    <body>
+
+      <div class="centre">
+            <section class="figure">
+                   <img src="file:///Users/nina/Documents/CSS%20et%20HTML/Tour-effeil.png"  alt=""><br>
+                  <h1 class="title">À La Découverte de Paris </h1>
+                  <h2><a href="Presentation.html">Cliquez !</a></h2>
+
+
+              </section>
+        </div>
+        
+
+
+
+      <script>
+
+
+
+
+
+      </script>
+    
+    </body>
+
+</html>
